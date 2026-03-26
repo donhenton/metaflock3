@@ -8,16 +8,16 @@ SPAWN_RADIUS  = 2.5
 # ── animation ─────────────────────────────────────────────────────────────────
 FPS           = 24
 FRAME_START   = 1
-FRAME_END     = 180
+FRAME_END     = 360
 
 # ── camera ────────────────────────────────────────────────────────────────────
 CAM_LOCATION  = (12, -12, 7)
 CAM_LERP      = 0.04      # 0.0 = locked, 1.0 = instant snap, 0.04 = lazy drift
 
 # ── light ─────────────────────────────────────────────────────────────────────
-LIGHT_TYPE    = "POINT"
+LIGHT_TYPE    = "SUN"
 LIGHT_LOCATION = (6, 4, 10)
-LIGHT_ENERGY  = 600
+LIGHT_ENERGY  = 20
 
 # ── metaballs ─────────────────────────────────────────────────────────────────
 MB_THRESHOLD  = 0.35
@@ -26,15 +26,15 @@ AGENT_RADIUS  = 1.0
 AGENT_STIFFNESS = 0.6
 
 # ── boids ─────────────────────────────────────────────────────────────────────
-BOIDS_MAX_SPEED        = 0.9
+BOIDS_MAX_SPEED        = 0.5
 BOIDS_NEIGHBOR_RADIUS  = 3.5
-BOIDS_SEPARATION_RADIUS = 1.2
-BOIDS_W_SEPARATION     = 2.5
+BOIDS_SEPARATION_RADIUS = 1.7
+BOIDS_W_SEPARATION     = 0.8
 BOIDS_W_ALIGNMENT      = 2.0
-BOIDS_W_COHESION       = 3.0
-BOIDS_COHESION_SCALE   = 0.05
+BOIDS_W_COHESION       = 0.6
+BOIDS_COHESION_SCALE   = 0.15
 BOIDS_ALIGNMENT_SCALE  = 0.3
-BOIDS_INIT_VEL         = 1.5   # ±range for random starting velocity
+BOIDS_INIT_VEL         = .4  # ±range for random starting velocity
 
 # ── lava lamp ─────────────────────────────────────────────────────────────────
 LAVA_RISE_SPEED     = 0.015
